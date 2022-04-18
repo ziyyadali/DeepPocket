@@ -37,7 +37,13 @@ The encoder portion of the transformer contains `s` stacks and also contains a F
 The total number in the Encoder portion, where `s = 1` totals to `s (83,520 + 3,104) = (83,520 + 3,104) = 86,624` trainable parameters.
 
 ## Model Examples
-
+After running the model though the 12 proteins in the test set, we got a accuracy of:
+```
+Transformer Accuracy: 0.9166666666666666
+Incorrect: 1
+Correct: 11
+```
+Due to the nature of how the data is organized, we cannot identify the name of the protein that is correct or incorrect. 
 
 ## Data Source
 The data was collected from the Protein data Bank (https://www.rcsb.org/), a database including the atomic coordinates of every protein whose structure has been solved.  
@@ -181,6 +187,7 @@ Based on the performance of the model, we know that the model is not appropriate
 
 Our accuracy function could be altered to better reflect the progress of the model. By using a euclidean distance as a form of accuracy alone, rather than checking if the distance is within a range, would also show properly show if the model is learning. A decreasing range threshold would also be a viable measurement.  
 
+The test accuracy showed that the model had a 91.67%. However, the accuracy function exagerates the peformance greatly. In the future, we would want to create a more accurate model that gets a high accuracy with a range of 10 angstroms.  
 
 ## Ethical Consideration
 It is difficult to foresee serious misuse of our technology, as our model is designed for medicinal purposes. Since our technology is designed primarily for the lab as opposed to clinical practice, in the event of failure to make an accurate prediction, our model would result in lost time and money for the researcher. This, of course, is inevitable in the research process. The only thing that needs to be necessary for the use of our model is that the number of atomic coordinates must be less than or equal to 100000.
