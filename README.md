@@ -194,6 +194,7 @@ It is difficult to foresee a serious misuse of our technology, as our model is d
 Furthermore, It is in the realm of possibility for a researcher to maliciously design drugs with our technology, in order to inhibit proteins crucial for healthy, and orderly functioning of the human body.
 
 ## Authors
+Every team member contributed to the success of the project. More detailed breakdown is presented below.
 - Preprocessing: Raiyan and Ahmed created a script to download large amounts of data and found the coordinates of each atom and the ligands. They were then put into lists to use for our model.
 - Model Creation: Raiyan, Ziyyad, Ahmed, and Hrithik developed the model together. 
 - Model Training: Ziyyad and Raiyan trained and created an overfitting model. They also tested various hyperparameters and ranges for the accuracy function. 
