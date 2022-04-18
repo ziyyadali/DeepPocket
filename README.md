@@ -1,7 +1,7 @@
 # DeepPocket: Ligand Binding Site Detection using Transformer Model
 
 ## Introduction
-DeepPocket is an ongoing collaboration with the Gunning Group at the University of Toronto Mississauga. The Gunning Group is a team consisting primarily of medicinal chemists who work on organic synthesis for drug discovery. DeepPocket is a framework for ligand binding site detection from protein structures.
+DeepPocket is an ongoing collaboration with the Gunning Lab at the University of Toronto Mississauga. The Gunning Group is a team consisting primarily of medicinal chemists who work on organic synthesis for drug discovery. DeepPocket is a framework for ligand binding site detection from protein structures.
 
 The research at the Gunning Group is targeted at battling some of the most aggresive forms of cancer.
 
