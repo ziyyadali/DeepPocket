@@ -36,14 +36,14 @@ The encoder portion of the transformer contains `s` stacks and also contains a F
 
 The total number in the Encoder portion, where `s = 1` totals to `s (83,520 + 3,104) = (83,520 + 3,104) = 86,624` trainable parameters.
 
-## Model Examples
-After running the model though the 12 proteins in the test set, we got a accuracy of:
+## Model Evaluation Example
+Model performance using 12 proteins in the test set is shown below:
 ```
-Transformer Accuracy: 0.9166666666666666
+Model Accuracy: 0.9166666666666666
 Incorrect: 1
 Correct: 11
 ```
-Due to the nature of how the data is organized, we cannot identify the name of the protein that is correct or incorrect. 
+Due to the nature of how the data is organized, It was hard to identify the correctly classified or misclassified protein. 
 
 ## Data Source
 The data was collected from the Protein data Bank (https://www.rcsb.org/), a database including the atomic coordinates of every protein whose structure has been solved.  
