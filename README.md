@@ -51,7 +51,7 @@ The data was collected from the Protein data Bank (https://www.rcsb.org/), a dat
 ## Data Summary
 
 ## Data Transformation and Split
-After downloading the .pdb files for $911183$ proteins, a script gathered each coordinate and saved them in a nested list consisting of three separate lists, corresponding the $x, y$ and $z$ coordinates. The list was then written to a pickle (.pkl) file.
+After downloading the .pdb files for $911183$ proteins, a python script gathered each coordinate and saved them in a nested list consisting of three separate lists, corresponding to the $x, y$ and $z$ coordinates. The list was then written to a pickle (.pkl) file.
 
 Atomic coordinates in the .pdb files look like: 
 ```
@@ -90,9 +90,9 @@ After running the script, each protein had a .pkl file containing a list with tw
 ...]]
 ```
 
-Since our model is overfitted to a small dataset, we have used 12 proteins to train.
+The model was trained on the data from 12 protein structures.The training was restricted to the subset of the data mainly due to the training time. 
 
-In the future, we intend to use 100,000 proteins for the validation set, 50,000 for the test set, and the remaining for training.
+In the future, we intend to use 100,000 proteins for the validation set, 50,000 for the test set, and the remaining for training the model.
 
 ## Training Curve
 ![image](https://user-images.githubusercontent.com/59152943/163754132-c76376a2-4a91-423a-8915-a1738d792426.png)
