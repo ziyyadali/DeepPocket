@@ -170,10 +170,22 @@ Trial 3:
 To measure to accuracy of our model, the predicted atom will need be a distance of 215 angstroms from the ground truth. Distance will be calculated by finding the Euclidean distance between the predicted and known atom, `sqrt((x1 – x2)**2 + (y1 – y2)**2 + (z1 – z2)**2)`. This distance will be used to determine if the model is actually learning. 
 
 ## Results
+Due to time constraints and hardware limitations, we were only able to produce an overfitting model trained on 12 proteins. The training model used the following hyperparameter values:
+- learning rate: 0.001
+- epochs: 500
+- batch size: 3
+- total proteins: 12
+We utilized checkpoint 425 which resulted in a Training Accuracy of 100% and a Loss of 8.701896. 
+
+Based on the performance of the model, we know that the model is not appropriate for deployment. Mostly since our model is incomplete, it will have a large margain of error in its predictions. If we were to have a decoder, we can properly pass in the expected ligands and create some correlation between the encoder and decoder. Our model would also benefit from using more than one stack of the encoder. 
+
+Our accuracy function could be altered to better reflect the progress of the model. By using a euclidean distance as a form of accuracy alone, rather than checking if the distance is within a range, would also show properly show if the model is learning. A decreasing range threshold would also be a viable measurement.  
+
 
 ## Ethical Consideration
 It is difficult to foresee serious misuse of our technology, as our model is designed for medicinal purposes. Since our technology is designed primarily for the lab as opposed to clinical practice, in the event of failure to make an accurate prediction, our model would result in lost time and money for the researcher. This, of course, is inevitable in the research process. The only thing that needs to be necessary for the use of our model is that the number of atomic coordinates must be less than or equal to 100000.
 However, it is in the realm of possibility for a researcher to maliciously design drugs with our technology, in order to inhibit proteins crucial for healthy, orderly functioning of the human body.
 
 ## Authors
+
 
