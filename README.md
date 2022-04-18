@@ -3,7 +3,7 @@
 ## Introduction
 DeepPocket is an ongoing collaboration with the Gunning Lab at the University of Toronto Mississauga. The Gunning Lab is a team consisting primarily of medicinal chemists who work on organic synthesis for drug discovery. DeepPocket is a framework for ligand binding site detection from protein structures.
 
-The research at the Gunning Group is targeted at battling some of the most aggresive forms of cancer.
+The research at the Gunning Lab is targeted at battling some of the most aggresive forms of cancer.
 
 ## Model Description
 We are building a transformer model to predict ligand-binding sites in a protein. Our input is a tensor containing the atomic coordinates represented as a tensor of shape `(number of proteins, number of atoms, 3)` where the number of proteins is analogous to the batch size. Our output from the model is a sigular atomic coordinate per protein in the form of a matrix of shape `(number of proteins, 1, 3)`. 
