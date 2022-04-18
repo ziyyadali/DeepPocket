@@ -9,6 +9,7 @@ The research at the Gunning Group is targeted at battling some of the most aggre
 We are building a transformer model to predict ligand-binding sites in a protein. Our input is a matrix containing the atomic coordinates represented as a matrix of shape (3, number of atoms). Our output from the model is a singular atomic coordinate in the form of a matrix of shape (3,1). 
 
 ## Model Figure
+![image](https://user-images.githubusercontent.com/59152943/163754132-c76376a2-4a91-423a-8915-a1738d792426.png)
 
 ## Model Parameters
 Our model contains a total of $TBD$ parameters. 
