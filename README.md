@@ -152,7 +152,7 @@ Time of epoch 500 is 1.120757
 ```
 
 ## Hyperparameter Tuning
-We initially had parameters:[^1]
+We initially used following parameters setting:[^1]
 - learning rate: 0.0001
 - epochs: 1000
 - batch size: 5
