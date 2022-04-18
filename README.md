@@ -172,6 +172,8 @@ To measure to accuracy of our model, the predicted atom will need be a distance 
 ## Results
 
 ## Ethical Consideration
+It is difficult to foresee serious misuse of our technology, as our model is designed for medicinal purposes. Since our technology is designed primarily for the lab as opposed to clinical practice, in the event of failure to make an accurate prediction, our model would result in lost time and money for the researcher. This, of course, is inevitable in the research process. The only thing that needs to be necessary for the use of our model is that the number of atomic coordinates must be less than or equal to 100000.
+However, it is in the realm of possibility for a researcher to maliciously design drugs with our technology, in order to inhibit proteins crucial for healthy, orderly functioning of the human body.
 
 ## Authors
 
