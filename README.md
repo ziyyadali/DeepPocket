@@ -28,8 +28,8 @@ In the future, we intend to improve upon the model and add more modules to creat
 
 ## Model Parameters
 Our model contains a total of `86,624` parameters. 
--	`d_model = 144`
--	`max_coords = 100000`
+-	`d_model = 144` This represents the model dimension
+-	`max_coords = 100000` 
 The multi-head attention contains 4 linear connections. Three of the linear connections correspond to Q, K, and V. The forth linear connection occurs after concatenating the `h` attention heads. Hence, the number of trainable parameters in the multi-head attention is `4 * ((d_model, d_model) + d_model) = 83,520`
 
 The encoder portion of the transformer contains `s` stacks and also contains a Feed Forward layer. The Feed Forward layer is a multi-layer perceptron with `((d_model, 20) + d_model) + ((20, 3) + 20) = 3,024 + 80 = 3,104` trainable parameters. 
