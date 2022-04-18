@@ -6,7 +6,7 @@ DeepPocket is an ongoing collaboration with the Gunning Lab at the University of
 The research at the Gunning Lab is targeted at battling some of the most aggresive forms of cancer.
 
 ## Model Description
-We are building a transformer model to predict ligand-binding sites in a protein. Our input is a tensor containing the atomic coordinates represented as a tensor of shape `(number of proteins, number of atoms, 3)` where the number of proteins is analogous to the batch size. Our output from the model is a sigular atomic coordinate per protein in the form of a matrix of shape `(number of proteins, 1, 3)`. 
+Transformer model is used tp predict ligand-binding sites in a protein structure. The input to the model is a tensor containing the atomic coordinates represented as a tensor of shape `(number of proteins, number of atoms, 3)` where the number of proteins is analogous to the batch size. The output from the model is a sigular atomic coordinate per protein in the form of a matrix of shape `(number of proteins, 1, 3)`. 
 
 ## Model Figure
 Due to time constraints, we were unable to complete a full transformer model based on the "Attention Is All You Need" architecture. Currently, our model contains the encoder portion of the complete model. 
