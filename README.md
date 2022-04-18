@@ -1,6 +1,11 @@
 # PocketFinder
 
 ## Introduction
+Deep Pocket is an ongoing collaboration with the Gunning Group at the University of Toronto Mississauga. The Gunning Group is a team consisting primarily of medicinal chemists who work on organic synthesis for drug discovery.
+
+The research at the Gunning Group is targeted at battling some of the most aggresive forms of cancer.
+
+## Model Description
 We are building a transformer model to predict ligand-binding sites in a protein. Our input is a matrix containing the atomic coordinates represented as a matrix of shape (3, number of atoms). Our output from the model is a singular atomic coordinate in the form of a matrix of shape (3,1). 
 
 ## Model Figure
