@@ -173,7 +173,7 @@ Trial 3:
 [^1]: This was trained using a CrossEntropyLoss loss function. This resulted in a very high loss. The other training models used the L1Loss function.  
 
 ## Quantitative Measures
-To measure to accuracy of our model, the predicted atom will need be a distance of 215 angstroms from the ground truth. Distance will be calculated by finding the Euclidean distance between the predicted and known atom, `sqrt((x1 – x2)**2 + (y1 – y2)**2 + (z1 – z2)**2)`. This distance will be used to determine if the model is actually learning. 
+The model correctly classified the protein binding if the predicted atom was within a distance of 215 angstroms(21.5 nanometres) from the ground truth. Distance between the predicted and target atom was calculated using the Euclidean distance, `sqrt((x1 – x2)**2 + (y1 – y2)**2 + (z1 – z2)**2)`. This distance was used to quantify the model learning. 
 
 ## Results
 Due to time constraints and hardware limitations, we were only able to produce an overfitting model trained on 12 proteins. The training model used the following hyperparameter values:
@@ -183,15 +183,15 @@ Due to time constraints and hardware limitations, we were only able to produce a
 - total proteins: 12
 We utilized checkpoint 425 which resulted in a Training Accuracy of 100% and a Loss of 8.701896. 
 
-Based on the performance of the model, we know that the model is not appropriate for deployment. Mostly since our model is incomplete, it will have a large margain of error in its predictions. If we were to have a decoder, we can properly pass in the expected ligands and create some correlation between the encoder and decoder. Our model would also benefit from using more than one stack of the encoder. 
+Based on the current model performance, we believe that the model is not appropriate for deployment. This is mostly because our model is incomplete, so it has relatively large margain of error in the predictions. Once we are able to successfuly incorporate decoder architecture in the model, we can then make use of the expected ligands and create some correlation between the encoder and decoder. The model would also benefit from using more than one stack of the encoder. 
 
-Our accuracy function could be altered to better reflect the progress of the model. By using a euclidean distance as a form of accuracy alone, rather than checking if the distance is within a range, would also show properly show if the model is learning. A decreasing range threshold would also be a viable measurement.  
+The accuracy function could be altered to better reflect the progress of the model. A decreasing range threshold would also be a viable measurement.  
 
-The test accuracy showed that the model had a 91.67%. However, the accuracy function exagerates the peformance greatly. In the future, we would want to create a more accurate model that gets a high accuracy with a range of 10 angstroms.  
+The test accuracy of the model was 91.67%. However, the accuracy function exagerates the peformance greatly. In the future, we would want to create a more accurate model that gets a high accuracy with a range of 10 angstroms.  
 
 ## Ethical Consideration
-It is difficult to foresee serious misuse of our technology, as our model is designed for medicinal purposes. Since our technology is designed primarily for the lab as opposed to clinical practice, in the event of failure to make an accurate prediction, our model would result in lost time and money for the researcher. This, of course, is inevitable in the research process. The only thing that needs to be necessary for the use of our model is that the number of atomic coordinates must be less than or equal to 100000.
-However, it is in the realm of possibility for a researcher to maliciously design drugs with our technology, in order to inhibit proteins crucial for healthy, orderly functioning of the human body.
+It is difficult to foresee a serious misuse of our technology, as our model is designed for medicinal purposes. Since our technology is designed primarily for the lab as opposed to clinical practice, in the event of failure to make an accurate prediction, our model would result in lost time and money for the researcher. This, of course, is inevitable in the research process. The only thing that needs to be necessary for the use of our model is that the number of atomic coordinates must be less than or equal to 100000, because that is the max number of coordinates the embedder is designed to handle. In the future, it can be dynamically changed, where the model needs to be retrained.
+Furthermore, It is in the realm of possibility for a researcher to maliciously design drugs with our technology, in order to inhibit proteins crucial for healthy, and orderly functioning of the human body.
 
 ## Authors
 - Preprocessing: Raiyan and Ahmed created a script to download large amounts of data and found the coordinates of each atom and the ligands. They were then put into lists to use for our model.
