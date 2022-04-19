@@ -26,6 +26,7 @@ The input is passed through three linear layers, Q, K, and V. The tensors are re
 The tensor then goes though the FeedForward module that reduces the dimentions result in a tensor of shape `(number of proteins, 3)`.
 
 The following image represents the "Attention Is All You Need" architecture. 
+
 ![image](https://user-images.githubusercontent.com/59152943/163833635-a418d5e9-9400-467e-9078-dad7d706147c.png)
  
 In the future, we intend to improve upon the model and add more modules to create a complete Transformer. 
