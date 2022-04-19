@@ -1,12 +1,16 @@
-# DeepPocket: Ligand Binding Site Detection using Transformer Model
+# Deep Pocket: Ligand Binding Site Detection using Transformer Model
 
 ## Introduction
-DeepPocket is an ongoing collaboration with the Gunning Lab at the University of Toronto Mississauga. The Gunning Lab is a team consisting primarily of medicinal chemists who work on organic synthesis for drug discovery. DeepPocket is a framework for ligand binding site detection from protein structures.
+Deep Pocket is an ongoing collaboration with the Gunning Lab at the University of Toronto Mississauga. The Gunning Lab is a team consisting primarily of medicinal chemists who work on organic synthesis for drug discovery. Deep Pocket is a framework for ligand binding site detection from protein structures.
 
-The research at the Gunning Lab is targeted at battling some of the most aggresive forms of cancer.
+## Motivation
+
+The research at the Gunning Lab is targeted at battling some of the most aggresive forms of cancer, including brain, breast, and blood cancer. For chemists to synthesize such inhibitory molecules, they must be able to identify whether a protein has one or more potential binding sites. After successfully identifying at least one binding site, they would elucidate amino acid residues in these sites, and design small molecules to bind. This task is typically done through literature review, however, when encountering new proteins the process may become long and arduous. Researchers, including the team at the Gunning Group, may determine this in a quite rudimentary manner, such as plotting the atomic coordinates on Microsoft Excel as a three-dimensional volume, and scanning for pocket-like structures with the naked eye.
+
+This project is our team's proposal for a deep learning solution to this problem.  In the process, our team envisions being a forerunner to the growing presence of deep learning in the fields of medicinal chemistry and drug discovery for cancer research.
 
 ## Model Description
-Transformer model is used tp predict ligand-binding sites in a protein structure. The input to the model is a tensor containing the atomic coordinates represented as a tensor of shape `(number of proteins, number of atoms, 3)` where the number of proteins is analogous to the batch size. The output from the model is a sigular atomic coordinate per protein in the form of a matrix of shape `(number of proteins, 1, 3)`. 
+The transformer model is used to predict ligand-binding sites in a protein structure. The input to the model is a tensor containing the atomic coordinates represented as a tensor of shape `(number of proteins, number of atoms, 3)` where the number of proteins is analogous to the batch size. The output from the model is a sigular atomic coordinate per protein in the form of a matrix of shape `(number of proteins, 1, 3)`. 
 
 ## Model Figure
 Due to time constraints, we were unable to complete a full transformer model based on the paper "Attention Is All You Need" architecture. Currently, our model contains the encoder portion of the complete model. 
@@ -191,7 +195,8 @@ The test accuracy of the model was 91.67%. However, the accuracy function exager
 
 ## Ethical Consideration
 It is difficult to foresee a serious misuse of our technology, as our model is designed for medicinal purposes. Since our technology is designed primarily for the lab as opposed to clinical practice, in the event of failure to make an accurate prediction, our model would result in lost time and money for the researcher. This, of course, is inevitable in the research process. The only thing that needs to be necessary for the use of our model is that the number of atomic coordinates must be less than or equal to 100000, because that is the max number of coordinates the embedder is designed to handle. In the future, it can be dynamically changed, where the model needs to be retrained.
-Furthermore, It is in the realm of possibility for a researcher to maliciously design drugs with our technology, in order to inhibit proteins crucial for healthy, and orderly functioning of the human body.
+
+Furthermore, it is in the realm of possibility for a researcher to maliciously design drugs with our technology, in order to inhibit proteins crucial for healthy, and orderly functioning of the human body.
 
 ## Authors
 Every team member contributed to the success of the project. More detailed breakdown is presented below.
