@@ -1,7 +1,7 @@
-# Deep Pocket: Ligand Binding Site Detection using Transformer Model
+# DeepPocket: Ligand Binding Site Detection using Transformer Model
 
 ## Introduction
-Deep Pocket is an ongoing collaboration with the Gunning Lab at the University of Toronto Mississauga. The Gunning Lab is a team consisting primarily of medicinal chemists who work on organic synthesis for drug discovery. Deep Pocket is a framework for ligand binding site detection from protein structures.
+DeepPocket is an ongoing collaboration with the Gunning Lab at the University of Toronto Mississauga. The Gunning Lab is a team consisting primarily of medicinal chemists who work on organic synthesis for drug discovery. DeepPocket is a framework for ligand binding site detection from protein structures.
 
 ## Motivation
 
