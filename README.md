@@ -56,7 +56,7 @@ The data was collected from the Protein data Bank (https://www.rcsb.org/), a dat
 ## Data Summary
 
 ## Data Transformation and Split
-After downloading the .pdb files for $911183$ proteins, a python script gathered each coordinate and saved them in a nested list consisting of three separate lists, corresponding to the $x, y$ and $z$ coordinates. The list was then written to a pickle (.pkl) file.
+After downloading the .pdb files for 911,183 proteins, a python script gathered each coordinate and saved them in a nested list consisting of three separate lists, corresponding to the x, y and z coordinates. The list was then written to a pickle (.pkl) file.
 
 Atomic coordinates in the .pdb files look like: 
 ```
