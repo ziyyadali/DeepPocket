@@ -204,6 +204,6 @@ Every team member contributed to the success of the project. More detailed break
 - Preprocessing: Raiyan and Ahmed created a script to download large amounts of data and found the coordinates of each atom and the ligands. They were then put into lists to use for our model.
 - Model Creation: Raiyan, Ziyyad, Ahmed, and Hrithik developed the model together. 
 - Model Training: Ziyyad and Raiyan trained and created an overfitting model. They also tested various hyperparameters and ranges for the accuracy function. 
-- README writeup: Ziyyad wrote the writeup and tested the model on a subset of the testing data with help from Raiyan and Hrithik .  
+- README writeup: Ziyyad wrote the writeup and tested the model on a subset of the testing data with help from Raiyan and Hrithik.
 
 
