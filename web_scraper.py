@@ -10,7 +10,7 @@ def f2():
     file = open("protein_ids.txt", "r")
     t = file.read()
     text = t.split(sep=",")
-
+    
     # Link to the website
     link = "https://files.rcsb.org/view/"
     counter = 0
@@ -18,6 +18,7 @@ def f2():
     # save location
     save = "F:\\413_project\\"
     for protein in text[802468:]:
+        # Making the URL from the information read from protein_ids.txt file
         flink = link + protein + ".pdb"
         content = requests.get(flink).text
         counter +=1
